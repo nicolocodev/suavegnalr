@@ -59,10 +59,9 @@ module Main =
                 owinApp
             ]
         
-        let cts = new CancellationTokenSource()
+        
         let suaveConfig = { defaultConfig with bindings = [ HttpBinding.create HTTP IPAddress.Loopback (uint16 port) ]} 
-        let _, server = startWebServerAsync suaveConfig app
-        Async.Start(server, cts.Token)        
-        Console.ReadLine() |> ignore
-        cts.Cancel()
+        
+        startWebServer suaveConfig app
+        
         0 // return an integer exit code
