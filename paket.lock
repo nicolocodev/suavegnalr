@@ -1,0 +1,32 @@
+RESTRICTION: == net461
+NUGET
+  remote: https://www.nuget.org/api/v2
+    FSharp.Core (4.2.2) - redirects: force
+    Microsoft.AspNet.SignalR.Client (2.2.2)
+      Newtonsoft.Json (>= 6.0.4)
+    Microsoft.AspNet.SignalR.Core (2.2.2)
+      Microsoft.Owin (>= 2.1)
+      Microsoft.Owin.Security (>= 2.1)
+      Newtonsoft.Json (>= 6.0.4)
+      Owin (>= 1.0)
+    Microsoft.AspNet.SignalR.Owin (1.2.2)
+      Microsoft.AspNet.SignalR.Core (>= 1.2.2)
+      Owin (>= 1.0)
+    Microsoft.Owin (3.1)
+      Owin (>= 1.0)
+    Microsoft.Owin.Hosting (3.1)
+      Microsoft.Owin (>= 3.1)
+      Owin (>= 1.0)
+    Microsoft.Owin.Security (3.1)
+      Microsoft.Owin (>= 3.1)
+      Owin (>= 1.0)
+    Newtonsoft.Json (10.0.3)
+    Owin (1.0)
+    Suave (2.1.1)
+      FSharp.Core (>= 4.0.0.1)
+    System.ValueTuple (4.3.1)
+
+GROUP Build
+NUGET
+  remote: https://www.nuget.org/api/v2
+    FAKE (4.63)

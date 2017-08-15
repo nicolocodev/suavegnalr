@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Suavegnalr.Hub", "src\Suavegnalr.Hub\Suavegnalr.Hub.fsproj", "{03302E28-D7B4-4E9F-A92B-75510547D256}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{6CA08B21-DDFD-4979-BEC8-EF6BD8835933}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".deploy", ".deploy", "{ECC53752-1386-4AB5-B026-593465513CA7}"
+	ProjectSection(SolutionItems) = preProject
+		.deployment = .deployment
+		deploy.cmd = deploy.cmd
+		deploy.fsx = deploy.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docs", ".docs", "{542A62B1-1D97-4521-8C20-712428885982}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Suavegnalr.Client", "src\Suavegnalr.Client\Suavegnalr.Client.fsproj", "{999D9D5A-F554-448B-9E48-28C1787CEBAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03302E28-D7B4-4E9F-A92B-75510547D256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03302E28-D7B4-4E9F-A92B-75510547D256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03302E28-D7B4-4E9F-A92B-75510547D256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03302E28-D7B4-4E9F-A92B-75510547D256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{999D9D5A-F554-448B-9E48-28C1787CEBAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{999D9D5A-F554-448B-9E48-28C1787CEBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{999D9D5A-F554-448B-9E48-28C1787CEBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{999D9D5A-F554-448B-9E48-28C1787CEBAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E25CAC5C-B71E-4AE8-B0A4-40CD9C75488F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+framework: NET461
+source https://www.nuget.org/api/v2/
+
+nuget Microsoft.AspNet.SignalR.Client
+nuget Microsoft.AspNet.SignalR.Owin
+nuget System.ValueTuple 4.3.1 restriction: >= net461
+nuget FSharp.Core ~> 4 redirects: force
+nuget Microsoft.Owin.Hosting 
+nuget Owin
+nuget Suave
+
+group Build
+	source https://nuget.org/api/v2
+
+	nuget FAKE
