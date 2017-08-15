@@ -3,3 +3,4 @@ Owin
 Microsoft.Owin
 Microsoft.AspNet.SignalR.Owin
 Suave
+Owin.Security.AesDataProtectorProvider

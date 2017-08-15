@@ -14,6 +14,7 @@ module Hubs =
 module Main =
     open Owin
     open Microsoft.Owin.Builder
+    open Owin.Security.AesDataProtectorProvider
     open Microsoft.AspNet.SignalR
     open Hubs
     open Suave
@@ -32,6 +33,7 @@ module Main =
         let owinApp =
             let builder = new AppBuilder()
             let builder = builder.MapSignalR() 
+            builder.UseAesDataProtectorProvider()
             builder.Build() |> OwinApp.ofAppFunc ""
         
         let hubContext = Microsoft.AspNet.SignalR.GlobalHost.ConnectionManager.GetHubContext<MessagesHub, ISendPings> ()

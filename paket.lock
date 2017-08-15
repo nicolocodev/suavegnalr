@@ -22,6 +22,8 @@ NUGET
       Owin (>= 1.0)
     Newtonsoft.Json (10.0.3)
     Owin (1.0)
+    Owin.Security.AesDataProtectorProvider (1.1.2)
+      Microsoft.Owin.Security (>= 3.1)
     Suave (2.1.1)
       FSharp.Core (>= 4.0.0.1)
     System.ValueTuple (4.3.1)

@@ -8,6 +8,7 @@ nuget FSharp.Core ~> 4 redirects: force
 nuget Microsoft.Owin.Hosting 
 nuget Owin
 nuget Suave
+nuget Owin.Security.AesDataProtectorProvider
 
 group Build
 	source https://nuget.org/api/v2
