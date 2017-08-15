@@ -28,14 +28,18 @@ module Main =
     open System.Net
     
     [<EntryPoint>]
-    let main [|port|] =        
-        
-        let owinApp =
-            let builder = new AppBuilder()
-            let builder = builder.MapSignalR() 
-            builder.UseAesDataProtectorProvider()
+    let main [|port|] =
+
+        let buildOwinApp (app : IAppBuilder)=
+            app.UseAesDataProtectorProvider()
+            let config = new HubConfiguration(EnableDetailedErrors = true)        
+            OwinExtensions.MapSignalR(app, config) |> ignore
+
+        let owinApp =            
+            let builder = new AppBuilder()            
+            buildOwinApp(builder)
             builder.Build() |> OwinApp.ofAppFunc ""
-        
+
         let hubContext = Microsoft.AspNet.SignalR.GlobalHost.ConnectionManager.GetHubContext<MessagesHub, ISendPings> ()
 
         let app = 
