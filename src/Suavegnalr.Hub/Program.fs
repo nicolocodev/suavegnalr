@@ -31,7 +31,7 @@ module Main =
     let main [|port|] =
 
         let buildOwinApp (app : IAppBuilder)=
-            //app.UseAesDataProtectorProvider()
+            app.UseAesDataProtectorProvider()
             let config = new HubConfiguration(EnableDetailedErrors = true)        
             OwinExtensions.MapSignalR(app, config) |> ignore
 
